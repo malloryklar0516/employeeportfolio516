@@ -212,6 +212,7 @@ li {
 /*responsive layout for screens 800px and less*/
 
 @media screen and (max-width:800px){
+    h1{font-size:20px;}
     .left {height:200px;}
     .profile{
         align-items: center;
@@ -246,5 +247,8 @@ margin-left:0px;
 margin-top:-50px;}
 .projects figcaption span{
     font-size:40%;
+}
+li {
+    font-size:smaller;
 }
 }

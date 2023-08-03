@@ -31,16 +31,46 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
-## Mock-Up
+## Deployment
 
-The following images show the web application's appearance and functionality at various screen widths:
+### Deployment Appearance
+The following images show the web application's appearance  at various screen widths:
 
-![portfolio mock-up 1](./Assets/02-advanced-css-homework-demo.gif)
+For screens above 800px:
+![portfolio mock-up large part 1](./Assets/Images/portfolio-demo-large-1.png)
+
+![portfio mock-up large part 2](./Assets/Images/portfolio-demo-large-2.png)
+
+For screens 800px and below:
+![portfolio mock-up small part 1](./Assets/Images/portfolio-demo-small-1.png)
+
+![portfio mock-up large part 2](./Assets/Images/portfolio-demo-small-2.png)
+
+### Link To Deployed Page
+
+
+
 
 ## Technologies Used
+HTML , CSS
 
+# License
+© 2023 Mallory Klar malloryklar0516
 
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-## Deployment: 
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
