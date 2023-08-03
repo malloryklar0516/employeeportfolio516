@@ -1,0 +1,250 @@
+* {
+    font-family: sans-serif;
+    margin:0;
+    padding:0;
+}
+:root{
+    --blue1: lightblue;
+    --blue2: rgb(10, 13, 48);
+}
+body{
+    width:100%;
+}
+/*applies styles to header*/
+header {
+    background-color: var(--blue2);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header h1 {
+    float:left;
+    color: var(--blue2);
+    background-color: var(--blue1);
+    padding: 15px 35px;
+}
+/*applies styles to navigation bar in header*/
+nav {
+    margin: 0px 10px;
+
+}
+nav ul li {
+    display: inline-block;
+
+
+}
+/*formats the text of nav bar list items*/ 
+nav ul li a {
+    color:var(--blue1);
+    text-decoration:underline;
+    text-decoration-thickness: 3px;
+    padding: 5px;
+}
+
+main{display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* formats background below header and employee headshot*/
+
+.left {
+    height: 300px;
+    width: 100%;
+    background-color:rgba(10, 38, 88, 0.52);
+    display: flex;
+
+}
+.profile {
+    display: flex;
+    flex-direction:Column;
+}
+/*formats headshot*/
+.profile img {
+    height: 85%;
+    position:relative;
+    border-radius:30px;
+    padding:5px;
+
+}
+/*formats name of employer*/
+.profile figcaption{
+
+    color: var(--blue2);
+    background-color: var(--blue1);
+    font-size: 150%;
+    font-weight: 600;
+    text-align: center;
+    border-radius:30px;
+}
+
+/*formats sections in content and portfolio to be flexed in rows and columns */
+.content{margin-left: 90px;
+    display: flex;
+    flex-direction:column;
+    margin-bottom:50px;
+}
+.portfolio {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:85%;
+    margin-top: 30px; 
+
+}
+
+
+.bio {display: flex;
+
+}
+/* formats section headings*/
+.bio h2 {
+    font-size: 140%;
+}
+/*formats text in about me section */
+.text{
+    flex:1
+}
+
+p {
+    text-align: center;
+    margin-left: 100px;
+}
+
+
+/* creates flex container for projects*/
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:70%;
+
+}
+
+/* formats projects as a grid*/
+.projects {
+    display:grid;
+    grid-template-columns:repeat(5,12vw);
+    grid-template-rows: repeat(5,12vw);
+    position: relative;
+    grid-gap:10px;
+
+}
+
+/*formats the umages for each projects*/
+.project-1 img, .project-2 img, .project-3 img, .project-4 img, .project-5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid var(--blue2);
+}
+/*formats captions for each project*/
+.projects figcaption{
+    position:absolute;
+    margin-left:3px;
+    margin-top:-70px;
+    color: var(--blue1);
+    background-color:var(--blue2);
+    font-size: 80%;
+    padding: 10px 30px;
+}
+figcaption span {
+    font-size:65%;
+    font-weight: lighter;
+    font-style: italic;
+}
+/*formats projects as a grid*/
+.project-1 {
+    grid-column-start:1;
+    grid-column-end: 5;
+    grid-row-start:1;
+    grid-row-end:3;
+    position: relative;
+}
+.project-2 {
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start:3;
+    grid-row-end:4;
+    position: relative;
+}
+.project-3 {
+    grid-column-start:3;
+    grid-column-end: 5;
+    grid-row-start:3;
+    grid-row-end:4;
+    position: relative;
+}
+.project-4 {
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start:4;
+    grid-row-end:5;
+    position: relative;
+}
+.project-5 {
+    grid-column-start:3;
+    grid-column-end:5;
+    grid-row-start:4;
+    grid-row-end: 5;
+    position: relative;
+}
+
+
+/*projects brighten when mouse hovers*/
+.projects figure:hover{
+    filter:brightness(130%);
+}
+
+
+/*formats contact information list items*/
+li {
+    list-style: none;
+}
+
+.info li{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:0px;
+}
+/*responsive layout for screens 800px and less*/
+
+@media screen and (max-width:800px){
+    .left {height:200px;}
+    .profile{
+        align-items: center;
+    }
+    .profile img{
+        width:100%;
+        height:80%;
+    }
+    .profile figcaption{
+        font-size: 100%;
+        padding:5px;
+    }
+    .content {margin-left:60px;}
+
+    p{margin-left:0px;
+    font-size:smaller;
+     }
+    .portfolio{
+        flex-direction:column;
+        align-items:center;
+        margin-left:20px;
+        margin-bottom:0px;
+    }
+    .bio h2{margin-bottom:10px;
+    }
+    .flex-container {margin-left:25px;
+}
+.projects figcaption 
+{font-size:60%;
+padding:5px 15px;
+margin-left:0px;
+margin-top:-50px;}
+.projects figcaption span{
+    font-size:40%;
+}
+}
