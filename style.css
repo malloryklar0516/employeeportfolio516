@@ -3,20 +3,22 @@
     margin:0;
     padding:0;
 }
+
 :root{
     --blue1: lightblue;
     --blue2: rgb(10, 13, 48);
 }
-body{
+
+body {
     width:100%;
 }
+
 /*applies styles to header*/
 header {
     background-color: var(--blue2);
     display:flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 header h1 {
@@ -25,16 +27,17 @@ header h1 {
     background-color: var(--blue1);
     padding: 15px 35px;
 }
+
 /*applies styles to navigation bar in header*/
 nav {
     margin: 0px 10px;
 
 }
+
 nav ul li {
     display: inline-block;
-
-
 }
+
 /*formats the text of nav bar list items*/ 
 nav ul li a {
     color:var(--blue1);
@@ -48,6 +51,7 @@ main{display:flex;
     align-items: center;
     justify-content: center;
 }
+
 /* formats background below header and employee headshot*/
 
 .left {
@@ -55,23 +59,24 @@ main{display:flex;
     width: 100%;
     background-color:rgba(10, 38, 88, 0.52);
     display: flex;
-
 }
+
 .profile {
     display: flex;
     flex-direction:Column;
 }
+
 /*formats headshot*/
+
 .profile img {
     height: 85%;
     position:relative;
     border-radius:30px;
     padding:5px;
-
 }
+
 /*formats name of employer*/
 .profile figcaption{
-
     color: var(--blue2);
     background-color: var(--blue1);
     font-size: 150%;
@@ -92,17 +97,15 @@ main{display:flex;
     justify-content: space-between;
     width:85%;
     margin-top: 30px; 
-
 }
-
-
+/* formats bio class and their section headings*/
 .bio {display: flex;
-
 }
-/* formats section headings*/
+
 .bio h2 {
     font-size: 140%;
 }
+
 /*formats text in about me section */
 .text{
     flex:1
@@ -113,14 +116,12 @@ p {
     margin-left: 100px;
 }
 
-
 /* creates flex container for projects*/
 .flex-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width:70%;
-
 }
 
 /* formats projects as a grid*/
@@ -130,7 +131,6 @@ p {
     grid-template-rows: repeat(5,12vw);
     position: relative;
     grid-gap:10px;
-
 }
 
 /*formats the umages for each projects*/
@@ -140,6 +140,7 @@ p {
     object-fit: cover;
     border: 3px solid var(--blue2);
 }
+
 /*formats captions for each project*/
 .projects figcaption{
     position:absolute;
@@ -150,11 +151,13 @@ p {
     font-size: 80%;
     padding: 10px 30px;
 }
+
 figcaption span {
     font-size:65%;
     font-weight: lighter;
     font-style: italic;
 }
+
 /*formats projects as a grid*/
 .project-1 {
     grid-column-start:1;
@@ -192,12 +195,10 @@ figcaption span {
     position: relative;
 }
 
-
 /*projects brighten when mouse hovers*/
 .projects figure:hover{
     filter:brightness(130%);
 }
-
 
 /*formats contact information list items*/
 li {
@@ -209,11 +210,17 @@ li {
     justify-content: space-between;
     padding-bottom:0px;
 }
-/*responsive layout for screens 800px and less*/
 
-@media screen and (max-width:800px){
-    h1{font-size:20px;}
-    .left {height:200px;}
+/*responsive layout for screens 800px and less*/
+@media screen and (max-width:800px) {
+    h1{
+        font-size:20px;
+    }
+
+    .left {
+        height:200px;
+    }
+
     .profile{
         align-items: center;
     }
@@ -221,14 +228,19 @@ li {
         width:100%;
         height:80%;
     }
+
     .profile figcaption{
         font-size: 100%;
         padding:5px;
     }
-    .content {margin-left:60px;}
 
-    p{margin-left:0px;
-    font-size:smaller;
+    .content {
+        margin-left:60px;
+    }
+
+    p{
+        margin-left:0px;
+        font-size:smaller;
      }
     .portfolio{
         flex-direction:column;
@@ -236,19 +248,24 @@ li {
         margin-left:20px;
         margin-bottom:0px;
     }
+
     .bio h2{margin-bottom:10px;
     }
+
     .flex-container {margin-left:25px;
-}
-.projects figcaption 
-{font-size:60%;
-padding:5px 15px;
-margin-left:0px;
-margin-top:-50px;}
-.projects figcaption span{
-    font-size:40%;
-}
-li {
-    font-size:smaller;
-}
+    }
+    
+    .projects figcaption {
+    font-size:60%;
+    padding:5px 15px;
+    margin-left:0px;
+    margin-top:-50px;
+    }
+
+    .projects figcaption span {
+        font-size:40%;
+    }
+    li {
+        font-size:smaller;
+    }
 }

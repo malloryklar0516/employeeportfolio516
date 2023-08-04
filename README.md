@@ -31,9 +31,9 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
-## Deployment
+# Deployment
 
-### Deployment Appearance
+## Deployment Appearance
 The following images show the web application's appearance  at various screen widths:
 
 For screens above 800px:
@@ -46,12 +46,12 @@ For screens 800px and below:
 
 ![portfio mock-up large part 2](./Assets/Images/portfolio-demo-small-2.png)
 
-### Link To Deployed Page
+## Link To Deployed Page
+https://malloryklar0516.github.io/employeeportfolio516/
 
 
 
-
-## Technologies Used
+# Technologies Used
 HTML , CSS
 
 # License
